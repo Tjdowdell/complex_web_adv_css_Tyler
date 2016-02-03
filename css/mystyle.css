@@ -1,37 +1,4 @@
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
-pre, form, fieldset, input, textarea, p, blockquote, th, td { 
-	padding: 0;
-	margin: 0;
-	}
-fieldset, img { 
-	border: 0;
-	}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	}
-ol, ul {
-	list-style: none;
-	}
-address, caption, cite, code, dfn, em, strong, th, var {
-	font-weight: normal;
-	font-style: normal;
-	}
-caption, th {
-	text-align: left;
-	}
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-	font-size: 100%;
-	}
-q:before, q:after {
-	content: '';
-	}
-abbr, acronym { 
-	border: 0;
-	}
-
-
+@charset "utf-8";
 	body{	/*this changes the background colour of the site*/
 	background-color:#B6B6B6 ;
 }
@@ -49,8 +16,6 @@ a:hover{
 a:active{	
 	font-family:Verdana; color:#e86600; text-decoration:none;
 }
-
-
 					/*CSS styling for divs on page*/
 #wrapper{	
 	width: 802px;
@@ -320,6 +285,86 @@ h3 {
  .td {
 	vertical-align:top; 
  }
+					/*CSS styling for the imagemap*/
+ .imagemap { 
+	width: 500px;
+	height: 321px;
+	position: relative;
+	padding-left:2px
+}
+.imagemap ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.imagemap a {
+	position: absolute;
+	display: block;
+	background-image: url(file:///G|/TAFE%20Diploma/images/transparent.gif);
+	color: #fff;
+	width: 0px;
+	height: 0px;
+	text-decoration: none;
+	left: 106px;
+	top: 156px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.imagemap a:hover,
+.imagemap a:focus {
+	border-color: transparent;
+	cursor: pointer;
+}
+.imagemap .red a {
+	top: -100px;
+	left: 0px;
+	border:none;
+}
+.imagemap .green a {
+	top: -140px;
+	left: 160px;
+	border:none;
+}
+.imagemap .blue a {
+	top: -150px;
+	left: 300px;
+	border:none;
+}
+.imagemap .yellow a {
+	top: -200px;
+	left: 440px;
+	border:none;
+}
+.imagemap .purple a {
+	top: -250px;
+	left: 240px;
+	border:none;
+}
+.imagemap a .note {
+	position: absolute;
+	bottom: -3em;
+	width: 7em;
+	padding: 0.2em 0.5em;
+	background-color:#ffc;
+	border: 1px solid black;
+	text-align: center;
+	left: -1000em;
+	margin-left: -4em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	color:#000;
+	font-size:12px;
+	width:auto;
+	height:auto;
+	line-height: 100%;
+	transition: left 1.5s;
+
+}
+.imagemap a:hover .note,
+.imagemap a:focus .note {
+	left: 63px;
+	z-index: 1;
+}
 
  					/*Tablet Responsive*/
 					
@@ -391,49 +436,6 @@ h3 {
 	margin-bottom:10px;
 	margin-top:-5px;
 }
-
-#mainContent2{	
-	width:100%;
-	float:left;
-    border: 1px solid #b40c00;
-	min-height: 500px;
-	background-color: #F6F6F6;
-	margin-bottom:10px;
-	margin-top:-5px;
-}
-
-#mainContent3{	
-	width:100%;
-	float:left;
-    border: 1px solid #b40c00;
-	min-height: 500px;
-	background-color: #F6F6F6;
-	margin-bottom:10px;
-	margin-top:-5px;
-}
-
-#mainContent4{	
-	width:100%;
-	float:left;
-    border: 1px solid #b40c00;
-	min-height: 500px;
-	background-color: #F6F6F6;
-	margin-bottom:10px;
-	margin-top:-5px;
-}
-
-#mainContent5{	
-	width:100%;
-	float:left;
-    border: 1px solid #b40c00;
-	min-height: 500px;
-	background-color: #F6F6F6;
-	margin-bottom:10px;
-	margin-top:-5px;
-}
-.hiddenTD{
-	display: none;
-}
 .TextWrap {		
 	float: right;
     margin: 10px;
@@ -468,10 +470,13 @@ IMG.displayed2 {
 	width:90%;
 	height:70%;
  }
-
+ .tr{
+	width:25%;
+	height:25%;
+ }
  .td{
-	width:50%;
-	height:50%;
+	width:25%;
+	height:25%;
  }
  #designs{
 	width:100%;
@@ -504,12 +509,7 @@ IMG.displayed2 {
  }
 				 /*Mobile Responsive*/
 				 
-@media screen and (max-width: 481px){ 
-html{
-
-	width:100%;
-}
-
+@media (max-width: 481px){ 
 body{	
 	background-color: #B6B6B6;
 }
@@ -578,47 +578,6 @@ body{
 	margin-bottom:10px;
 	margin-top:-5px;
 }
-
-#mainContent2{	
-	width:100%;
-	float:left;
-    border: 1px solid #b40c00;
-	min-height: 500px;
-	background-color: #F6F6F6;
-	margin-bottom:10px;
-	margin-top:-5px;
-}
-
-#mainContent3{	
-	width:100%;
-	float:left;
-    border: 1px solid #b40c00;
-	min-height: 500px;
-	background-color: #F6F6F6;
-	margin-bottom:10px;
-	margin-top:-5px;
-}
-
-#mainContent4{	
-	width:100%;
-	float:left;
-    border: 1px solid #b40c00;
-	min-height: 500px;
-	background-color: #F6F6F6;
-	margin-bottom:10px;
-	margin-top:-5px;
-}
-
-#mainContent5{	
-	width:100%;
-	float:left;
-    border: 1px solid #b40c00;
-	min-height: 500px;
-	background-color: #F6F6F6;
-	margin-bottom:10px;
-	margin-top:-5px;
-}
-
 .TextWrap {		
 	float: right;
     margin: 10px;
@@ -652,11 +611,14 @@ IMG.displayed2 {
 	width:90%;
 	height:70%;
  }
-
- .hiddenTD{
-	display: none;
+ .tr{
+	width:25%;
+	height:25%;
  }
- 
+ .td{
+	width:25%;
+	height:25%;
+ }
  #designs{
 	width:100%;
 	height:70% 

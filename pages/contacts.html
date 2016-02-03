@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us</title>
 <link rel="shortcut icon" href="../images/icon.ico">
 <link href="../css/mystyle.css" rel="stylesheet" type="text/css">
@@ -65,34 +64,62 @@
 </div>
 <div id="contact">
         <form name="htmlform" method="post" action="html_form_send.php">
+<table class="contactTable">
 
+<tr>
+ <td >
   <label>First Name *</label>
-   <br/>
+ </td>
+ <td >
   <input  type="text" name="first_name" maxlength="50" size="40">
-<br/> <br/>
+ </td>
+</tr>
+ 
+<tr>
+ <td >
   <label>Last Name *</label>
-  <br/>
+ </td>
+ <td >
   <input  type="text" name="last_name" maxlength="50" size="40">
-<br/> <br/>
-  <label>Email *</label>
-  <br/>
+ </td>
+</tr>
+<tr>
+ <td >
+  <label>Email Address *</label>
+ </td>
+ <td >
   <input  type="text" name="email" maxlength="80" size="40">
-<br/> <br/>
-  <label>Telephone </label>
- <br/>
+ </td>
+ 
+</tr>
+<tr>
+ <td >
+  <label>Telephone Number</label>
+ </td>
+ <td >
   <input  type="text" name="telephone" maxlength="30" size="40">
- <br/> <br/>
+ </td>
+</tr>
+<tr>
+ <td >
   <label>Comments *</label>
-  <br/>
+ </td>
+ <td>
   <textarea  name="comments" maxlength="1000" cols="41" rows="6"></textarea>
-<br/> <br/>
-  <input type="submit" value="Submit">   
+ </td>
 
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   
+ </td>
+</tr>
+</table>
 </form>
 </div>
 <div id="MyGmaps">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0" user-scalable="no">
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
 

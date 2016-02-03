@@ -77,8 +77,13 @@ li ul li a {
 	padding: 0 10px;
 }
 
+ul.hidden:hover{
+	display: block;
+}
+
 /*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
+
+ul li a:hover + .hidden, .hidden:hover { 
 	display: block;
 	position: absolute; 
 }
@@ -89,6 +94,7 @@ font-size:13px;
 float:left;
 margin-left:-50px;
 padding-bottom:10px;
+
 }
 /*Responsive dropdown navigaional menu*/
 .show-menu {
@@ -133,6 +139,11 @@ ul {
 	}
 	
 }
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+	position: absolute; 
+	display: none;
+}
 
  @media (max-width: 481px){
 	ul {
@@ -153,4 +164,9 @@ ul {
 		width:89.3%;
 		margin-left:50px
 	} 
+	ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+	position: absolute; 
+	display: none;
+}
  }
